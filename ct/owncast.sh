@@ -33,7 +33,7 @@ function update_script() {
     systemctl stop owncast
     msg_ok "Stopped Service"
 
-    fetch_and_deploy_gh_release "owncast" "owncast/owncast" "prebuild" "latest" "/opt/owncast" "owncast*linux-64bit.zip"
+    fetch_and_deploy_gh_release "owncast" "Heff-tv/owncast" "prebuild" "latest" "/opt/owncast" "owncast*linux-64bit.zip"
 
     msg_info "Starting Service"
     systemctl start owncast
